@@ -1,0 +1,493 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/************ HTML5 display-role reset for older browsers **************/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/************************* here is for the page *************************/
+
+*{
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: 'GoudyStd-Bold'
+	src:url(GoudyStd-Bold.otf);
+}
+html{
+	height: 100%;
+}
+body{
+	font-family: GoudyStd-Bold;
+	width: 100%;
+	height:auto;
+	margin:auto;
+	height: 100%;
+}
+main{
+	width: 90%;
+	margin:auto;
+	height: 100%;
+}
+header{
+	font-size: 40px;
+	color: #745242;
+	border-bottom: 2px solid #745242;
+	width: 100%;
+	height:7%;
+	margin:10px;
+}
+#container{
+	width: 100%;
+	height: 93%;
+	height: 100%;
+	position: relative;
+}
+#h_left{
+	width: 85%;
+	float: left;
+}
+#h_right{
+	width: 15%;
+	float: left;
+}
+button{
+	margin-top: 10px;
+	background-color: #885541;
+	color: white;
+	font-family: GoudyStd-Bold;
+	font-size: 15px;
+	border: 0.5px solid black;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+/***************** here is for middle right **************************/
+
+#m_right{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 25px;
+	width: 16%;
+	float: right;
+	height: 100%;
+}
+.tmb{
+	background-color: #885541;
+}
+.tmb p{
+	float: left;
+	padding-left: 10px;
+	padding-top:15px;
+}
+.tmb img{
+	float: left;
+	cursor: pointer;
+}
+.fs{
+	background-color: #C7BAB3;
+	color: #885541;
+}
+#firstbox{
+	padding-left: 20px;
+	display: none;
+}
+#secondbox{
+	text-align: center;
+	display: none;
+}
+
+#choose::-webkit-file-upload-button{
+  visibility: hidden;
+}
+input[type='file'] {
+  color: transparent;
+}
+#choose{
+	width: 80%;
+}
+#choose::before {
+	margin-top: 10px;
+	content: 'choose file...';
+	display: inline-block;
+	background: #885541;
+	border: 1px solid black;
+	padding: 5px 8px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 100%;
+	font-family: GoudyStd-Bold;
+	color: white;
+}
+#upload{
+	width:30%;
+	font-size: 40%;
+	font-family: GoudyStd-Bold;
+}
+#enter{
+	margin-left: 10px;
+	float: left;
+	width:30%;
+}
+#clear{
+	width: 50%;
+	margin-left: 10px;
+}
+#filter{
+	width: 90%;
+	height: 30px;
+	border: none;
+	font-size: 20px;
+	font-family: GoudyStd-Bold;
+	margin-top: 10px;
+}
+
+#m_right input::placeholder{
+	padding-left: 4px;
+	color: #885541;
+}
+#bottombox{
+	width: 100%;
+	height: 100%;
+}
+
+/********************* here is for middle left ***************************/
+
+
+#m_left{
+	float: left;
+	width: 80%;
+	height: 100%;
+	position: relative;
+}
+.flexy{
+	width:25%;
+	height: 550px;
+	float:left;
+	padding-right: 10px;
+	position: relative;
+}
+.picturebox{
+	width: 100%;
+	height: 70%;
+	position: relative;
+	border: 1px solid #885541;
+}
+.addsection{
+	position: absolute;
+	height: 12%;
+	bottom: 5px;
+	width: 100%;
+	left: 3%;
+	font-size: 100%;
+}
+.textbox{
+	margin-top: 2px;
+	margin-left: 1px;
+	width: 100%;
+	float: left;
+}
+.add{
+	width: 17%;
+	float: bottom;
+}
+.photo{
+	float: left;
+	max-height: 100%;
+	width: 100%;
+
+}
+.triangle{
+	position: absolute;
+	left: 80%;
+    top: 88%;
+}
+.triangle img{
+	width: 80%;
+	height:auto;
+	cursor: pointer;
+}
+/**************************** for delete part ****************************/
+.tags{
+	position: absolute;
+	margin-left: 6px;
+	width: 90%;
+	border: 2px solid #885541;
+	height: 15%;
+	bottom: 70px;
+}
+.deleteDiv{
+	height: 100%;
+	width:100%;
+	position: relative;
+}
+.deleImg{
+	width: 6%;
+	height: auto;
+	margin-top: 2px;
+	margin-left: 2px;
+	float: left;
+	cursor: pointer;
+}
+.para{
+	float: left;
+	padding-right: 8px;
+}
+/**************nav information and tags information*********************/
+nav{
+	position: absolute;
+	left: 66%;
+    top: 81%;
+	float: right;
+	width: 30%;
+	background-color: #885541;
+	border: 2px solid black;
+}
+nav li{
+	font-size: 60%;
+	color: white;
+	list-style-type: none;
+	border-bottom: 2px solid black;
+	width: 100%;
+	height:20px;
+	text-align: center;
+	padding-top: 4px;
+	cursor: pointer;
+
+}
+nav img{
+	cursor: pointer;
+	float: right;
+	width: 40%;
+	height: auto;
+}
+
+
+/**************************res design*************************/
+
+
+@media(max-width: 960px){
+	.flexy{
+		width:50%;
+		height: 550px;
+		float:left;
+		padding-right: 10px;
+		position: relative;
+	}
+}
+@media only screen and (max-width: 480px){
+	header{
+		font-size: 40px;
+		font-weight: bold;
+		color: #745242;
+		border:none;
+		width: 100%;
+		height:7%;
+		margin:10px;
+		position: relative;
+	}
+	#h_left{
+		width: 100%;
+		left: 20%;
+		position: absolute;
+	}
+	#h_right{
+		display: none;
+	}
+	#container{
+		width: 100%;
+		height: 93%;
+		height: 100%;
+		position: relative;
+	}
+	#m_left{
+		float: left;
+		width: 80%;
+		height: 100%;
+		position: absolute;
+		position: relative;
+		top:80px;
+	}
+	#m_right{
+		position: absolute;
+		float: top;
+		display: flex;
+		flex-direction: row;
+		color: white;
+		font-size: 100%;
+		width: 100%;
+		height: 80px;
+	}
+	.flexy{
+		width:100%;
+		height: 550px;
+		float:left;
+		padding-right: 10px;
+		left: 18%;
+		position: relative;
+	}
+
+	.tmb{
+		background-color: white;
+		position: relative;
+	}
+	.tmb p{
+		float: left;
+		padding-left: 10px;
+		padding-top:15px;
+		display: none;
+	}
+	.tmb img{
+		padding-right: 5px;
+		padding-left: 50px;
+		cursor: pointer;
+	}
+	#favorite{
+		padding-top: 5px;
+	}
+	.fs{
+		background-color: #C7BAB3;
+		color: #885541;
+	}
+	#firstbox{
+		position: absolute;
+		width: 30%;
+		top: 30px;
+		display: none;
+	}
+	#secondbox{
+		position: absolute;
+		left:140px;
+		width: 30%;
+		top:20px;
+		text-align: center;
+		display: none;
+	}
+
+	#choose::-webkit-file-upload-button{
+	  visibility: hidden;
+	}
+	input[type='file'] {
+	  color: transparent;
+	}
+	#choose{
+		width: 80%;
+	}
+	#choose::before {
+		margin-top: 10px;
+		content: 'choose file...';
+		display: inline-block;
+		background: #885541;
+		border: 1px solid black;
+		padding: 5px 8px;
+		outline: none;
+		white-space: nowrap;
+		-webkit-user-select: none;
+		cursor: pointer;
+		font-size: 100%;
+		font-family: GoudyStd-Bold;
+		color: white;
+	}
+	#upload{
+		width:70%;
+		font-size: 50%;
+		font-family: GoudyStd-Bold;
+	}
+	#enter{
+		float: left;
+		width:85%;
+		font-size: 50%;
+	}
+	#clear{
+		width: 80%;
+		font-size: 50%;
+	}
+	#filter{
+		width: 80%;
+		height: 30px;
+		border: none;
+		font-size: 100%;
+		font-family: GoudyStd-Bold;
+		margin-top: 10px;
+	}
+
+	#m_right input::placeholder{
+		padding-left: 4px;
+		color: #885541;
+	}
+	#bottombox{
+		width: 100%;
+		height: 100%;
+	}
+	button{
+		background-color: #885541;
+		color: white;
+		font-family: GoudyStd-Bold;
+		font-size: 100%;
+		border: 0.5px solid black;
+		cursor: pointer;
+	}
+
+
+}
+
+
+/****************** ProgressBar **********************/
+.Progress {
+	display: none;
+	margin-top:1px;
+	height:8px;
+  width: 100%;
+	border:2px solid #613A28;
+  background-color: #fff;
+}
+
+.Bar {
+  width: 1%;
+  height: 4px;
+  background-color: #90523C;
+}

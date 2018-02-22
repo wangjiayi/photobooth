@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: 'GoudyStd-Bold'
+	src:url(GoudyStd-Bold.otf);
+}
+body{
+	text-align: center;
+	font-family: GoudyStd-Bold;
+}
+div{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.top{
+	font-size: 50px;
+	color: #745242;
+}
+#middle_button{
+	font-size: 20px;
+	border: 1px solid black;
+	background-color: #745242;
+	width: 90px;
+	height: 35px;
+	color: white;
+	font-family: GoudyStd-Bold;
+	cursor: pointer;
+}
+.bottom{
+	color: #745242;
+	font-size: 18px;
+}
